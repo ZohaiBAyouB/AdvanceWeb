@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Web Engineering Assignment</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  
+</head>
+<body>
+
+<div class="container">
+  <h2>Calculator for Addition and Subtraction for any 2 Value</h2>
+
+  <form>
+    <div class="form-group">
+      <label for="num1">Number 1:</label>
+      <input type="number"   class="form-control" id="num1" >
+    </div>
+    <div class="form-group">
+      <label for="num2">Number 2:</label>
+      <input type="number"   class="form-control" id="num2">
+    </div>
+    <div class="form-group">
+      <label for="Eql">Equals To:</label>
+      <input type="text" class="form-control" id="Eql">
+    </div>
+    <button type="button" onClick="addition()"    class="btn btn-default">ADD</button>
+    <button type="button" onClick="subtraction()" class="btn btn-default">SUBTRACT</button>
+  </form>
+</div>
+         <script>
+                function addition()
+            {
+         var num1 = parseFloat(document.getElementById('num1').value);
+         var num2 = parseFloat(document.getElementById("num2").value);
+         document.getElementById("Eql").innerHTML = num1 + num2;
+           }
+
+                function subtraction() 
+             { 
+             var num1 = parseFloat(document.getElementById('num1').value);
+             var num2 = parseFloat(document.getElementById("num2").value);
+           document.getElementById("Eql").innerHTML = num1 - num2;
+             }
+			 
+			 
+                
+         </script>
+</body>
+</html>
